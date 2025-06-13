@@ -60,4 +60,3 @@ Response:
                 <h1 style="font-size:100px;" align="center">uid=0(root) gid=0(root) groups=0(root)     
 </h1>
 ```
----

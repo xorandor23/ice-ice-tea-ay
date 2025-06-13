@@ -28,7 +28,7 @@ def send_post_request(url, body, headers):
         c.close()
 
 print("Ice-Ice-Tea-Ay!")
-print("A Brute-Force Tool to check SSTI vulnerability on Jinja2/Flask-based web servers.")
+print("A Brute-Force Tool to check SSTI vulnerability on Jinja2/Flask-based web servers.\n")
 url = input("Please put the URL target here: ").strip()
 body_template = input("Insert a header body (place '&x' inside the body): ").strip()
 num = input("1. Number eval check \n2. Remote Code Execution (RCE) check \n3. Check all possible code \nChoose a number: ").strip()

@@ -24,6 +24,8 @@ It works by injecting multiple crafted payloads and analyzing server responses t
 
 ---
 ## How to use
+First you need to find an input in targeted website. Then open Developer Tools, go to Network tab, and try to fill with something then submit it. Check for any endpoint that uses "POST" method inside "Header" tab. Copy the payload from "Payload" tab (on the left side of "Header" tab) and use the endpoint in the script.
+
 This is an example of use:
 ```bash
 > python3 ice-ice-tea-ay.py

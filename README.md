@@ -23,6 +23,16 @@ It works by injecting multiple crafted payloads and analyzing server responses t
 - Uses `pycurl` for fast and raw HTTP requests
 
 ---
+
+## Installation
+
+```bash
+git clone https://github.com/yourusername/ice-ice-tea-ay.git
+cd ice-ice-tea-ay
+pip install pycurl requests
+```
+
+---
 ## How to use
 First you need to find an input in targeted website. Then open Developer Tools, go to Network tab, and try to fill with something then submit it. Check for any endpoint that uses "POST" method inside "Header" tab. Go to the "Payload" tab (on the left side of "Header" tab), click "View Source", copy the payload and use the endpoint in the script.
 
@@ -51,10 +61,3 @@ Response:
 </h1>
 ```
 ---
-## Installation
-
-```bash
-git clone https://github.com/yourusername/ice-ice-tea-ay.git
-cd ice-ice-tea-ay
-pip install pycurl requests
-```
